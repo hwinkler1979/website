@@ -577,9 +577,16 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
-      nav { padding: 0 24px; }
-      .nav-links { gap: 18px; }
-      .hero { padding: 80px 24px 80px; }
+      nav {
+        padding: 10px 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .nav-links { gap: 14px; flex-wrap: wrap; }
+      .nav-links a { font-size: 0.72rem; letter-spacing: 0.08em; }
+      .hero { padding: 130px 24px 80px; }
       .hero-inner { grid-template-columns: 1fr; gap: 48px; }
       .hero-right {
         display: flex;
