@@ -615,7 +615,7 @@
     <div class="hero-eyebrow">Senior Economist · World Bank</div>
     <h1>Hernan<br>Winkler</h1>
     <p class="hero-tagline">
-      Development economist specializing in <strong>labor markets</strong>, <strong>poverty and inequality dynamics</strong>, and the distributional impacts of <strong>technology</strong> — with 15+ years at the World Bank shaping policy across Latin America and the Caribbean.
+      Development economist specializing in <strong>labor markets</strong>, <strong>poverty and inequality dynamics</strong>, and the distributional impacts of <strong>technology</strong> — with 15+ years at the World Bank translating research into policy impact in Latin America, with experience spanning Europe, Central Asia, and beyond.
     </p>
     <div class="hero-contact">
       <a href="mailto:hwinkler@worldbank.org" class="hero-contact-link">
@@ -698,10 +698,10 @@
     <h2>Research</h2>
 
     <div class="research-tabs">
-      <button class="tab-btn active" onclick="showTab('publications', this)">Refereed Publications</button>
-      <button class="tab-btn" onclick="showTab('working', this)">Working Papers</button>
-      <button class="tab-btn" onclick="showTab('books', this)">Books & Reports</button>
-      <button class="tab-btn" onclick="showTab('contributions', this)">WB Contributions</button>
+      <button class="tab-btn active" data-tab="publications">Refereed Publications</button>
+      <button class="tab-btn" data-tab="working">Working Papers</button>
+      <button class="tab-btn" data-tab="books">Books &amp; Reports</button>
+      <button class="tab-btn" data-tab="contributions">WB Contributions</button>
     </div>
 
     <!-- REFEREED PUBLICATIONS -->
@@ -1318,12 +1318,19 @@
 </footer>
 
 <script>
-  function showTab(id, btn) {
-    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    btn.classList.add('active');
-  }
+  // Tab switching
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const id = this.getAttribute('data-tab');
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      this.classList.add('active');
+    });
+  });
+
+  // Scroll reveal
+  // ...existing code...
 
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
