@@ -206,7 +206,7 @@
     .photo-placeholder svg { width: 40px; height: 40px; opacity: 0.2; }
     .photo-caption {
       position: absolute;
-      bottom: -44px; left: 0; right: -14px;
+      top: calc(100% + 24px); left: 0; right: -14px;
       text-align: center;
       font-size: 0.72rem;
       color: rgba(255,255,255,0.4);
@@ -599,13 +599,13 @@
       .hero-right {
         display: flex;
         justify-content: center;
-        padding: 0 0 40px 0;
+        padding: 0 0 80px 0;
       }
       .photo-frame {
         width: 200px;
         height: 250px;
       }
-      .photo-caption { bottom: -40px; }
+      .photo-caption { top: calc(100% + 20px); }
       .hero-contact { grid-template-columns: 1fr; }
       #about, #experience, #awards { padding: 72px 28px; }
       #about { grid-template-columns: 1fr; gap: 48px; }
@@ -648,15 +648,15 @@
 <div class="hero">
   <div class="hero-inner">
   <div class="hero-left">
-    <div class="hero-eyebrow">Senior Economist · World Bank</div>
+    <div class="hero-eyebrow">Principal Economist and Head of the Poverty Group - IDB</div>
     <h1>Hernan<br>Winkler</h1>
     <p class="hero-tagline">
-      Development economist specializing in <strong>labor markets</strong>, <strong>poverty and inequality dynamics</strong>, and the distributional impacts of <strong>technology</strong> — with 15+ years at the World Bank translating research into policy impact in Latin America, with experience spanning Europe, Central Asia, and beyond.
+      Development Economist specializing in <strong>labor markets</strong>, <strong>poverty and inequality dynamics</strong>, and the distributional impacts of <strong>technology</strong>, with 15+ years translating research into policy impact in Latin America, with experience spanning Europe, Central Asia, and beyond.
     </p>
     <div class="hero-contact">
-      <a href="mailto:hwinkler@worldbank.org" class="hero-contact-link">
+      <a href="mailto:hernanw@iadb.org" class="hero-contact-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-        hwinkler@worldbank.org
+        hernanw@iadb.org
       </a>
       <a href="https://www.linkedin.com/in/hernanwinkler" target="_blank" class="hero-contact-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -666,7 +666,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
         Google Scholar
       </a>
-      <a href="winkler_cv_April2026.pdf" target="_blank" class="hero-contact-link">
+      <a href="winkler_cv_September2026.pdf" target="_blank" class="hero-contact-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
         Download CV
       </a>
@@ -675,7 +675,7 @@
   <div class="hero-right">
     <div class="photo-frame">
       <img src="IMG_8767.JPG" alt="Hernan Winkler">
-      <div class="photo-caption">Senior Economist &amp; Global Lead on Jobs · World Bank</div>
+      <div class="photo-caption">Principal Economist &amp; Head of the Poverty Group · IDB</div>
     </div>
   </div><!-- /hero-right -->
   </div><!-- /hero-inner -->
@@ -709,10 +709,10 @@
   </div>
   <div>
     <div class="bio-text">
-      <p>I am a development economist with over 15 years at the World Bank, currently serving as <strong>Global Lead on Jobs and Senior Economist</strong> in the Poverty and Equity Global Practice for Latin America and the Caribbean.</p>
+      <p>I am a development economist, currently <strong>Principal Economist and Head of the Poverty Group</strong> at the Inter-American Development Bank. I joined the IDB in 2026 after more than 15 years at the World Bank, where I served as Global Lead on Jobs and Senior Economist in the Poverty and Equity Global Practice for Latin America and the Caribbean.</p>
       <p>My research focuses on labor markets, poverty and inequality dynamics, and how technology — from the internet to generative AI — reshapes distributional outcomes. I have led or contributed to analytical work spanning 20+ countries, producing policy-relevant research that has informed government dialogue and featured in outlets including CNN en Español, NPR, France 24, Brookings, and the World Economic Forum.</p>
       <p>I am ranked in the <strong>top 5% of economists worldwide</strong> for publications over the last 10 years, according to RePEC/IDEAS aggregate rankings among 73,000+ registered authors. I also serve as Associate Researcher at CEDLAS, Universidad Nacional de La Plata, Argentina.</p>
-      <p>Prior to my current role, I was a Senior Economist at Amazon, where I advised business leaders on pricing decisions using causal inference methods at scale.</p>
+      <p>I also spent 2022&ndash;2023 as a Senior Economist at Amazon, where I advised business leaders on pricing decisions using causal inference methods at scale.</p>
     </div>
     <div class="theme-tags">
       <span class="theme-tag">Labor Markets</span>
@@ -742,9 +742,19 @@
 
     <!-- REFEREED PUBLICATIONS -->
     <div class="tab-content active" id="publications">
+      <div class="pub-item"><div class="pub-num">20</div><div>
+        <div class="pub-title"><a href="https://academic.oup.com/ooec/advance-article/doi/10.1093/ooec/odag006/8741530" target="_blank">"Technology, Labor Markets, and Inequality across the Development Spectrum: Reviewing the Evidence."</a></div>
+        <div class="pub-meta"><span class="pub-journal">Oxford Open Economics</span> (2026), advance access.</div>
+      </div></div>
+
+      <div class="pub-item"><div class="pub-num">19</div><div>
+        <div class="pub-title"><a href="https://www.latinaer.org/index.php/laer/article/view/567" target="_blank">"Does the Enforcement of Labor Regulations Reduce Informality? The Case of Peru."</a></div>
+        <div class="pub-meta"><span class="pub-journal">Latin American Economic Review</span> 37 (2026). With F. Pinto and Y. Valdivia.</div>
+      </div></div>
+
       <div class="pub-item"><div class="pub-num">18</div><div>
-        <div class="pub-title"><a href="https://documents1.worldbank.org/curated/en/099434205232231209/pdf/IDU0b9463f130c07f040160bb26018c9daadd997.pdf" target="_blank">"Neither by Land nor by Sea: The Rise of Electronic Remittances during an Emergency."</a></div>
-        <div class="pub-meta"><span class="pub-journal">Brazilian Review of Econometrics</span>, forthcoming. With L. Dinarte, D. Jaume and E. Medina.</div>
+        <div class="pub-title"><a href="https://periodicos.fgv.br/bre/article/view/93875" target="_blank">"Neither by Land nor by Sea: The Rise of Electronic Remittances during an Emergency."</a></div>
+        <div class="pub-meta"><span class="pub-journal">Brazilian Review of Econometrics</span> 43.2 (2026). With L. Dinarte, D. Jaume and E. Medina.</div>
       </div></div>
 
       <div class="pub-item"><div class="pub-num">17</div><div>
@@ -844,8 +854,12 @@
       <div class="wp-group">
         <div class="wp-group-label">GenAI & Technology</div>
         <div class="wp-item">
+          <div class="wp-title"><a href="https://thedocs.worldbank.org/en/doc/161f78cea5d8157fdec44251db9cf166-0050062026/original/Expertise-automation-Gmyrek-Segura-Winkler-Yu.pdf" target="_blank">"Generative AI and the Global Redistribution of Expertise."</a></div>
+          <div class="wp-meta">Background paper for the World Development Report 2026: Artificial Intelligence for Development, July 2026. With P. Gmyrek, H. Segura and S. Yu.</div>
+        </div>
+        <div class="wp-item">
           <div class="wp-title"><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099505503022622875" target="_blank">"Disruption without Dividend? How the Digital Divide and Task Differences Split GenAI's Global Impact."</a></div>
-          <div class="wp-meta">World Bank Policy Research Working Paper 11328, March 2026. With P. Gmyrek and M. Viollaz.</div>
+          <div class="wp-meta">World Bank Policy Research Working Paper 11328, March 2026. With P. Gmyrek and M. Viollaz. <a href="Country_new_exposure_measures.xlsx" style="color:var(--gold-light);">Country-level Exposure to AI</a></div>
         </div>
         <div class="wp-item">
           <div class="wp-title"><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099826507262419608" target="_blank">"Buffer or Bottleneck? Employment Exposure to Generative AI and the Digital Divide in Latin America."</a></div>
@@ -864,8 +878,8 @@
       <div class="wp-group">
         <div class="wp-group-label">Labor Markets</div>
         <div class="wp-item">
-          <div class="wp-title"><a href="https://www.cedlas.econo.unlp.edu.ar/wp/wp-content/uploads/doc_cedlas363.pdf" target="_blank">"Does the Enforcement of Labor Regulations Reduce Informality? The Case of Peru."</a></div>
-          <div class="wp-meta">CEDLAS Working Paper 363, January 2026. Under review. With F. Pinto and Y. Valdivia.</div>
+          <div class="wp-title"><a href="https://openknowledge.worldbank.org/entities/publication/0015b062-57ad-4f1e-9907-779d78660cc3" target="_blank">"Trade Diversion and Jobs: Evidence from Mexican Municipalities."</a></div>
+          <div class="wp-meta">World Bank Policy Research Working Paper 11419, June 2026. With C. Rodriguez-Castelan and E. Vazquez.</div>
         </div>
         <div class="wp-item">
           <div class="wp-title"><a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099456306062431847" target="_blank">"Measuring Green Jobs: A New Database for Latin America and Other Regions."</a></div>
@@ -1064,7 +1078,14 @@
   <h2>Professional Experience</h2>
   <div>
     <div class="exp-item">
-      <div class="exp-years">2023 – Present</div>
+      <div class="exp-years">2026 – Present</div>
+      <div>
+        <div class="exp-org">Inter-American Development Bank</div>
+        <div class="exp-role">Principal Economist &amp; Head of the Poverty Group · Washington, DC</div>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-years">2023 – 2026</div>
       <div>
         <div class="exp-org">World Bank</div>
         <div class="exp-role">Global Lead on Jobs & Senior Economist, Poverty and Equity GP – LAC · Washington, DC</div>
@@ -1313,6 +1334,10 @@
   <div class="section-label">Recognition</div>
   <h2>Fellowships & Awards</h2>
   <div class="awards-grid">
+    <div class="award-item">
+      <div class="award-name">Best Policy Relevant Paper (Energy Poverty Paper)</div>
+      <div class="award-year">World Bank LAC Chief Economist Office · 2026</div>
+    </div>
     <div class="award-item">
       <div class="award-name">Best Innovative Policy Database Award (Green Jobs Database)</div>
       <div class="award-year">World Bank LAC Chief Economist Office · 2024</div>
